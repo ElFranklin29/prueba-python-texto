@@ -59,16 +59,11 @@ def procesar_texto(parrafo: str):
         "Numero de veces que aparece cada palabra": dict(cantidadPorPalabra)
         }
     
-
     pp = PrettyPrinter(sort_dicts=False)
     print("\nTEXTO ANALIZADO\n")
     pp.pprint(resultado)
     
     
-
-
-
-
 
 menu()
 
