@@ -28,8 +28,7 @@ def menu():
     
     
 
-def procesar_texto(parrafo: str):
-    
+def procesar_texto(parrafo: str):  
     #Se eliminan signos de puntuacion con libreria regex e indicando categoria unicode
     textoLimpio = regex.sub(r"\p{P}","", parrafo.lower())
 
@@ -57,7 +56,7 @@ def procesar_texto(parrafo: str):
         "Numero de palabras": numeroPalabras,
         "Lista de palabras (Sin repetir)": palabrasUnicas,
         "Palabra(s) mas larga": palabrasMasLargas,
-        "Numero de veces que aparece cada palabra": cantidadPorPalabra
+        "Numero de veces que aparece cada palabra": dict(cantidadPorPalabra)
         }
     
 
